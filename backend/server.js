@@ -1,5 +1,15 @@
 const { ApolloServer, gql } = require("apollo-server");
 
+const books = [
+    {
+        title: "吾輩は猫である",
+        author: "夏目漱石",
+    },
+    {
+        title: "走れメロス",
+        author: "太宰治",
+    },
+]
 
 // どういうふうにAPiに対して問い合わせをするのかを設定
 const typeDefs = gql`
