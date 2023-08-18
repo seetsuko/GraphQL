@@ -32,6 +32,7 @@ const resolvers = {
     }
 }
 
+// 設定したQueryをApolloで使えるように記述
 const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
